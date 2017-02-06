@@ -26,9 +26,12 @@ module.exports = NodeHelper.create({
         } else if (notification === 'USER') {
             if (this.loggedIn) {
                 this.send(this.loggedIn, 'logout');
+                this.loggedIn = null;
             }
 
-            this.send(payload, 'login');
+            if (payload !== 'None') {
+                this.send(payload, 'login');
+            }
         }
     },
 
