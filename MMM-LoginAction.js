@@ -13,8 +13,8 @@ Module.register('MMM-LoginAction', {
     defaults: {
         baseUrl: 'https://www.hello.world/user/{@}/{@}',
         actions: {
-            login: '1',
-            logout: '0'
+            login: 1,
+            logout: 0
         },
         users: {
             JohnDoe: [
