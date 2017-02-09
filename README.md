@@ -35,5 +35,6 @@ MMM-Facial-Recognition.
 | `users` | `{ JohnDoe: [ 'JohnDoe', 'ACTION' ] }` | The users have an array with values. Those values get used to fill out the placeholders of the `baseUrl`. The value ACTION will be replaced by either the login or logout action value. |
 
 The default values would look like this:
+
 * Login `https://www.hello.world/user/JohnDoe/1`
 * Logout `https://www.hello.world/user/JohnDoe/0`
